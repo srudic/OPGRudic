@@ -1,3 +1,26 @@
-.companyInfo {
+.companyInfoContainter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: var(--color-blue);
+  padding: 2em 12em;
+  align-items: center;
+}
+
+.companyInfo {
+  font-family: "Baloo Da 2", cursive;
+}
+
+.companyInfo h1 {
+  font-weight: normal;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.companyInfo p {
+  margin: 0;
+  padding: 0.5em 0 0 2em;
+  font-size: 1em;
+  font-weight: normal;
 }

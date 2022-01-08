@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  background-color: var(--color-green);
+  width: 3px;
+  height: 30px;
+  border-radius: 2px;
+  margin-left: 0.5em;
+}
+
+.title {
+  font-family: Lucida Handwriting;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 2em;
+  color: var(--color-golden);
+  padding: 0.5em;
+}

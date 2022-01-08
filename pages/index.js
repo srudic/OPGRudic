@@ -1,15 +1,11 @@
-import style from "../styles/HomePage.module.css";
-import NavigationBar from "../components/navigationBar/navigationBar";
-import CompanyInfo from "../components/companyInfo";
+import Footer from "../components/footer/footer";
+import Header from "../components/header/header";
 const HomePage = () => {
   return (
     <>
-      <div className={style.header}>Header</div>
+      <Header />
       <div>Main</div>
-      <div>
-        <NavigationBar />
-        <CompanyInfo />
-      </div>
+      <Footer />
     </>
   );
 };
