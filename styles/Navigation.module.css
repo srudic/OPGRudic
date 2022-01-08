@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1em 5em;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.topPage {
+  color: var(--color-green);
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Handwriting";
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.subPage {
+  color: var(--color-golden);
+  padding-left: 1em;
+  margin: 0;
+  padding: 0.5em 0 0 1em;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+.navigation_subcontainer {
+  display: flex;
+  flex-direction: column;
+}
