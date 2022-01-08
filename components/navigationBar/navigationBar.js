@@ -1,6 +1,8 @@
 import Link from "next/link";
 import style from "../../styles/Navigation.module.css";
 
+// MISSING: bottom line for highlighting active tab in navigation bar
+
 const NavigationBar = () => {
   return (
     <div className={style.navigation}>
