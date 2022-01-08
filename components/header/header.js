@@ -9,6 +9,10 @@ const Header = () => {
         <div className={style.line}></div>
       </div>
       <div className={style.title}>OPG Rudić</div>
+      <div
+        className={style.menu}
+        style={{ backgroundColor: "transparent" }}
+      ></div>
     </div>
   );
 };
