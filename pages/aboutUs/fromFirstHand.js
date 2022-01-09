@@ -1,5 +1,11 @@
+import Layout from "../../components/layout/layout";
+
 const FromFirstHandPage = () => {
-  return <div>From first hand</div>;
+  return (
+    <Layout>
+      <div>From first hand</div>
+    </Layout>
+  );
 };
 
 export default FromFirstHandPage;

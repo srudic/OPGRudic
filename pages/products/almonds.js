@@ -1,5 +1,10 @@
+import Layout from "../../components/layout/layout";
 const AlmondsPage = () => {
-  return <div>The almonds page</div>;
+  return (
+    <Layout>
+      <div>The almonds page</div>
+    </Layout>
+  );
 };
 
 export default AlmondsPage;

@@ -1,5 +1,11 @@
+import Layout from "../../components/layout/layout";
+
 const AboutUsPage = () => {
-  return <div>The AboutUsPage</div>;
+  return (
+    <Layout>
+      <div>The AboutUsPage</div>
+    </Layout>
+  );
 };
 
 export default AboutUsPage;

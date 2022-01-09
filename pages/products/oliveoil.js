@@ -1,5 +1,11 @@
+import Layout from "../../components/layout/layout";
+
 const OliveOilPage = () => {
-  return <div>The olive oil page</div>;
+  return (
+    <Layout>
+      <div>The olive oil page</div>
+    </Layout>
+  );
 };
 
 export default OliveOilPage;
