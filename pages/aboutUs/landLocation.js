@@ -1,11 +1,5 @@
-import Layout from "../../components/layout/layout";
-
 const LandLocationPage = () => {
-  return (
-    <Layout>
-      <div>The land location page</div>
-    </Layout>
-  );
+  return <div>The land location page</div>;
 };
 
 export default LandLocationPage;

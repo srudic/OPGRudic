@@ -1,10 +1,5 @@
-import Layout from "../components/layout/layout";
 const HomePage = () => {
-  return (
-    <Layout>
-      <div style={{ minHeight: "90vh" }}>Main</div>
-    </Layout>
-  );
+  return <div style={{ minHeight: "90vh" }}>Main</div>;
 };
 
 export default HomePage;
