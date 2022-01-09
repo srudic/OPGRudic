@@ -1,12 +1,9 @@
-import Footer from "../components/footer/footer";
-import Header from "../components/header/header";
+import Layout from "../components/layout/layout";
 const HomePage = () => {
   return (
-    <>
-      <Header />
+    <Layout>
       <div style={{ minHeight: "90vh" }}>Main</div>
-      <Footer />
-    </>
+    </Layout>
   );
 };
 
