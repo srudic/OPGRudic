@@ -2,13 +2,21 @@ import Link from "next/link";
 import style from "../../styles/Navigation.module.css";
 import { useRouter } from "next/router";
 
-const NavigationBar = () => {
+const NavigationBar = (props) => {
   const router = useRouter();
 
+  let classesNavigation = style.navigation;
+  let classesTopPages = style.topPage;
+
+  if (props.menu) {
+    classesNavigation = style.navigationMenu;
+    classesTopPages = style.topPagesMenu;
+  }
+
   return (
-    <div className={style.navigation}>
+    <div className={classesNavigation}>
       <div className={style.navigation_subcontainer}>
-        <li className={style.topPage}>
+        <li className={classesTopPages}>
           <Link href={"/"}>
             <span className={router.pathname === "/" ? `${style.active}` : ""}>
               Naslovnica
@@ -17,7 +25,7 @@ const NavigationBar = () => {
         </li>
       </div>
       <div className={style.navigation_subcontainer}>
-        <li className={style.topPage}>
+        <li className={classesTopPages}>
           <Link href={"/products"}>
             <span
               className={
@@ -55,7 +63,7 @@ const NavigationBar = () => {
         </li>
       </div>
       <div className={style.navigation_subcontainer}>
-        <li className={style.topPage}>
+        <li className={classesTopPages}>
           <Link href={"/aboutUs"}>
             <span
               className={
