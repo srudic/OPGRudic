@@ -5,11 +5,13 @@ import { useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const openMenu = () => console.log("Kliknut");
+  const openMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div className={style.header}>
-      <div className={style.menu}>
+      <div className={style.menu} onClick={openMenu}>
         <FaBars size={40} color="#3f7253" />
         <div className={style.line}></div>
       </div>
@@ -17,11 +19,12 @@ const Header = () => {
       <div
         className={style.menu}
         style={{ backgroundColor: "transparent" }}
-        onClick={openMenu}
       ></div>
-      <div className={style.dropdown}>
-        <NavigationBar menu />
-      </div>
+      {isMenuOpen ? (
+        <div className={style.dropdown}>
+          <NavigationBar menu />
+        </div>
+      ) : null}
     </div>
   );
 };
