@@ -1,5 +1,5 @@
 const HomePage = () => {
-  return <div style={{ minHeight: "90vh" }}>Main</div>;
+  return <div>Main</div>;
 };
 
 export default HomePage;
