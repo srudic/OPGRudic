@@ -1,5 +1,11 @@
+import CoverPhoto from "../components/coverPhoto/coverPhoto";
+
 const HomePage = () => {
-  return <div>Main</div>;
+  return (
+    <div>
+      <CoverPhoto />
+    </div>
+  );
 };
 
 export default HomePage;
