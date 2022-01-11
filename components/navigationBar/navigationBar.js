@@ -26,10 +26,10 @@ const NavigationBar = (props) => {
       </div>
       <div className={style.navigation_subcontainer}>
         <li className={classesTopPages}>
-          <Link href={"/products"}>
+          <Link href={"/Proizvodi"}>
             <span
               className={
-                router.pathname === "/products" ? `${style.active}` : ""
+                router.pathname === "/Proizvodi" ? `${style.active}` : ""
               }
             >
               Proizvodi
@@ -38,10 +38,10 @@ const NavigationBar = (props) => {
         </li>
 
         <li className={style.subPage}>
-          <Link href={"/products/oliveoil"}>
+          <Link href={"/Proizvodi/Maslinovo_ulje"}>
             <span
               className={
-                router.pathname === "/products/oliveoil"
+                router.pathname === "/Proizvodi/Maslinovo_ulje"
                   ? `${style.active}`
                   : ""
               }
@@ -51,10 +51,10 @@ const NavigationBar = (props) => {
           </Link>
         </li>
         <li className={style.subPage}>
-          <Link href={"/products/almonds"}>
+          <Link href={"/Proizvodi/Bademi"}>
             <span
               className={
-                router.pathname === "/products/almonds" ? `${style.active}` : ""
+                router.pathname === "/Proizvodi/Bademi" ? `${style.active}` : ""
               }
             >
               Bademi
@@ -64,21 +64,19 @@ const NavigationBar = (props) => {
       </div>
       <div className={style.navigation_subcontainer}>
         <li className={classesTopPages}>
-          <Link href={"/aboutUs"}>
+          <Link href={"/O_nama"}>
             <span
-              className={
-                router.pathname === "/aboutUs" ? `${style.active}` : ""
-              }
+              className={router.pathname === "/O_nama" ? `${style.active}` : ""}
             >
               O nama
             </span>
           </Link>
         </li>
         <li className={style.subPage}>
-          <Link href={"/aboutUs/fromFirstHand"}>
+          <Link href={"/O_nama/Saznajte_iz_prve_ruke"}>
             <span
               className={
-                router.pathname === "/aboutUs/fromFirstHand"
+                router.pathname === "/O_nama/Saznajte_iz_prve_ruke"
                   ? `${style.active}`
                   : ""
               }
@@ -88,10 +86,10 @@ const NavigationBar = (props) => {
           </Link>
         </li>
         <li className={style.subPage}>
-          <Link href={"/aboutUs/landLocation"}>
+          <Link href={"/O_nama/Lokacije_nasada"}>
             <span
               className={
-                router.pathname === "/aboutUs/landLocation"
+                router.pathname === "/O_nama/Lokacije_nasada"
                   ? `${style.active}`
                   : ""
               }
@@ -101,10 +99,10 @@ const NavigationBar = (props) => {
           </Link>
         </li>
         <li className={style.subPage}>
-          <Link href={"/aboutUs/contact"}>
+          <Link href={"/O_nama/Kontakt"}>
             <span
               className={
-                router.pathname === "/aboutUs/contact" ? `${style.active}` : ""
+                router.pathname === "/O_nama/Kontakt" ? `${style.active}` : ""
               }
             >
               Kontakt
