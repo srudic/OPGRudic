@@ -2,6 +2,46 @@ import Link from "next/link";
 import style from "../../styles/Navigation.module.css";
 import { useRouter } from "next/router";
 
+const NAVIGATION = [
+  {
+    to: "/",
+    title: "Naslovnica",
+    submenu: [],
+  },
+  {
+    to: "/Proizvodi",
+    title: "Proizvodi",
+    submenu: [
+      {
+        to: "/Proizvodi/Maslinovo_ulje",
+        title: "Maslinovo ulje",
+      },
+      {
+        to: "/Proizvodi/Bademi",
+        title: "Bademi",
+      },
+    ],
+  },
+  {
+    to: "/O_nama",
+    title: "O nama",
+    submenu: [
+      {
+        to: "/O_nama/Saznajte_iz_prve_ruke",
+        title: "Saznajte iz prve ruke",
+      },
+      {
+        to: "/O_nama/Lokacije_nasada",
+        title: "Lokacije nasada",
+      },
+      {
+        to: "/O_nama/Kontakt",
+        title: "Kontakt",
+      },
+    ],
+  },
+];
+
 const NavigationBar = (props) => {
   const router = useRouter();
 
@@ -15,101 +55,35 @@ const NavigationBar = (props) => {
 
   return (
     <div className={classesNavigation}>
-      <div className={style.navigation_subcontainer}>
-        <li className={classesTopPages}>
-          <Link href={"/"}>
-            <span className={router.pathname === "/" ? `${style.active}` : ""}>
-              Naslovnica
-            </span>
-          </Link>
-        </li>
-      </div>
-      <div className={style.navigation_subcontainer}>
-        <li className={classesTopPages}>
-          <Link href={"/Proizvodi"}>
-            <span
-              className={
-                router.pathname === "/Proizvodi" ? `${style.active}` : ""
-              }
-            >
-              Proizvodi
-            </span>
-          </Link>
-        </li>
+      {NAVIGATION.map((menu) => (
+        <div className={style.navigation_subcontainer}>
+          <li className={classesTopPages}>
+            <Link href={menu.to}>
+              <span
+                className={router.pathname === menu.to ? `${style.active}` : ""}
+                onClick={props.closeMenuHandler}
+              >
+                {menu.title}
+              </span>
+            </Link>
+          </li>
 
-        <li className={style.subPage}>
-          <Link href={"/Proizvodi/Maslinovo_ulje"}>
-            <span
-              className={
-                router.pathname === "/Proizvodi/Maslinovo_ulje"
-                  ? `${style.active}`
-                  : ""
-              }
-            >
-              Maslinovo ulje
-            </span>
-          </Link>
-        </li>
-        <li className={style.subPage}>
-          <Link href={"/Proizvodi/Bademi"}>
-            <span
-              className={
-                router.pathname === "/Proizvodi/Bademi" ? `${style.active}` : ""
-              }
-            >
-              Bademi
-            </span>
-          </Link>
-        </li>
-      </div>
-      <div className={style.navigation_subcontainer}>
-        <li className={classesTopPages}>
-          <Link href={"/O_nama"}>
-            <span
-              className={router.pathname === "/O_nama" ? `${style.active}` : ""}
-            >
-              O nama
-            </span>
-          </Link>
-        </li>
-        <li className={style.subPage}>
-          <Link href={"/O_nama/Saznajte_iz_prve_ruke"}>
-            <span
-              className={
-                router.pathname === "/O_nama/Saznajte_iz_prve_ruke"
-                  ? `${style.active}`
-                  : ""
-              }
-            >
-              Saznajte iz prve ruke
-            </span>
-          </Link>
-        </li>
-        <li className={style.subPage}>
-          <Link href={"/O_nama/Lokacije_nasada"}>
-            <span
-              className={
-                router.pathname === "/O_nama/Lokacije_nasada"
-                  ? `${style.active}`
-                  : ""
-              }
-            >
-              Lokacije nasada
-            </span>
-          </Link>
-        </li>
-        <li className={style.subPage}>
-          <Link href={"/O_nama/Kontakt"}>
-            <span
-              className={
-                router.pathname === "/O_nama/Kontakt" ? `${style.active}` : ""
-              }
-            >
-              Kontakt
-            </span>
-          </Link>
-        </li>
-      </div>
+          {menu.submenu.map((submenu) => (
+            <li className={style.subPage}>
+              <Link href={submenu.to}>
+                <span
+                  className={
+                    router.pathname === submenu.to ? `${style.active}` : ""
+                  }
+                  onClick={props.closeMenuHandler}
+                >
+                  {submenu.title}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };

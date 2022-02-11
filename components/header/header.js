@@ -17,6 +17,10 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenuHandler = () => {
+    setIsMenuOpen(false);
+  };
+
   useEffect(() => {
     if (isMenuOpen) {
       setTabName("Izbornik");
@@ -47,7 +51,7 @@ const Header = () => {
       ></div>
       {isMenuOpen ? (
         <div className={style.dropdown}>
-          <NavigationBar menu />
+          <NavigationBar menu closeMenuHandler={closeMenuHandler} />
         </div>
       ) : null}
     </div>
