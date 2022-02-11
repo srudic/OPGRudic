@@ -1,4 +1,4 @@
-.ItemContainer {
+.itemContainer {
   text-align: justify;
   padding: 1em 3em;
   font-family: Lucida Handwriting;
@@ -7,7 +7,11 @@
   width: 65%;
 }
 
-.year {
+.center {
+  text-align: center;
+}
+
+.subtitle {
   color: var(--color-golden);
   padding-bottom: 5%;
   font-size: 0.9em;

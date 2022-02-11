@@ -1,4 +1,5 @@
 import ArticleWrapper from "../articleWrapper/articleWrapper";
+import ArticleItem from "../articleItem/articleItem";
 import styles from "../../styles/Products.module.css";
 
 const Products = () => {
@@ -7,8 +8,13 @@ const Products = () => {
       title={"Proizvodi"}
       subtitle={"Kušajte okus domaćih proizvoda"}
     >
-      <div>Bademi</div>
-      <div>Ulje</div>
+      <ArticleItem title={"Jezgra badema"} subtitle={"OPG Rudić"} src />
+      <ArticleItem
+        title={"Ekstra djevičansko maslinovo ulje"}
+        subtitle={"OPG Rudić"}
+        src
+      />
+      <ArticleItem />
     </ArticleWrapper>
   );
 };
