@@ -1,22 +1,20 @@
-import ArticleWrapper from "../articleWrapper/ArticleWrapper";
+import ArticleWrapper from "../articleWrapper/articleWrapper";
+import ArticleItem from "../articleItem/articleItem";
 import styles from "../../styles/BlogTitles.module.css";
 
 const BlogTitles = () => {
   return (
     <ArticleWrapper>
-      <div className={styles.blogTitle}>
-        <div className={styles.year}>2021.</div>
-        <div className={styles.title}>
-          Proglašenje najboljeg ulja u sedam Kaštela
-        </div>
-      </div>
-      <div className={styles.blogTitle}>
-        <div className={styles.year}>2021.</div>
-        <div className={styles.title}>
-          Urod ipak nije propao - “Bit će dovoljno za cijelu obitelj, ostat će i
-          za...”
-        </div>
-      </div>
+      <ArticleItem
+        year={"2021."}
+        title={"Proglašenje najboljeg ulja u sedam Kaštela"}
+      />
+      <ArticleItem
+        year={"2021."}
+        title={
+          " Urod ipak nije propao - “Bit će dovoljno za cijelu obitelj, ostat će i za..."
+        }
+      />
     </ArticleWrapper>
   );
 };

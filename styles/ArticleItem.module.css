@@ -1,0 +1,19 @@
+.ItemContainer {
+  text-align: justify;
+  padding: 1em 3em;
+  font-family: Lucida Handwriting;
+  font-style: italic;
+  font-weight: normal;
+  width: 65%;
+}
+
+.year {
+  color: var(--color-golden);
+  padding-bottom: 5%;
+  font-size: 0.9em;
+}
+
+.title {
+  color: var(--color-green);
+  font-size: 1.1em;
+}

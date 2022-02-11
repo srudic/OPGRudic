@@ -1,4 +1,4 @@
-import ArticleWrapper from "../articleWrapper/ArticleWrapper";
+import ArticleWrapper from "../articleWrapper/articleWrapper";
 import styles from "../../styles/Products.module.css";
 
 const Products = () => {
