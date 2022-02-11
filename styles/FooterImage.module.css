@@ -1,0 +1,35 @@
+.buttonContainer {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 3em;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.headLineContainer {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 70%;
+  color: var(--color-golden);
+  font-family: Lucida Handwriting;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.headLineContainer h2 {
+  margin: 0em;
+}

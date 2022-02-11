@@ -8,11 +8,11 @@ const Products = () => {
       title={"Proizvodi"}
       subtitle={"Kušajte okus domaćih proizvoda"}
     >
-      <ArticleItem title={"Jezgra badema"} subtitle={"OPG Rudić"} src />
+      <ArticleItem title={"Jezgra badema"} subtitle={"OPG Rudić"} img />
       <ArticleItem
         title={"Ekstra djevičansko maslinovo ulje"}
         subtitle={"OPG Rudić"}
-        src
+        img
       />
       <ArticleItem />
     </ArticleWrapper>
