@@ -23,6 +23,14 @@
   height: 30px;
   border-radius: 2px;
   margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.tabName {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: "Baloo Da 2", cursive;
+  color: var(--color-green);
 }
 
 .title {

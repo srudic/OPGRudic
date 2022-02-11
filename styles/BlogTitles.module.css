@@ -1,0 +1,33 @@
+.blogs {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+}
+
+.blogTitle {
+  text-align: justify;
+  padding: 1em 3em;
+  font-family: Lucida Handwriting;
+  font-style: italic;
+  font-weight: normal;
+  width: 65%;
+}
+
+.line {
+  width: 2px;
+  background-color: var(--color-green);
+}
+
+.year {
+  color: var(--color-golden);
+  padding-bottom: 5%;
+  font-size: 0.9em;
+}
+
+.title {
+  color: var(--color-green);
+  font-size: 1.1em;
+}

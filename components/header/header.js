@@ -1,7 +1,7 @@
 import style from "../../styles/Header.module.css";
 import { FaBars } from "react-icons/fa";
 import NavigationBar from "../navigationBar/navigationBar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 //MISSING
@@ -17,22 +17,28 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // if (isMenuOpen) {
-  //   setTabName("Izbornik");
-  // } else {
-  //   setTabName(router.pathname);
-  // }
-
-  // const test = router.pathname.toString();
-  // const testArray = test.replace("_", " ").split("/");
-  // U SLJEDEĆOJ LINIJI JE PROBLEM AKO JE testArray[2] ===undefined jer ispise undefined
-  // console.log(testArray[1] + " - " + testArray[2]);
+  useEffect(() => {
+    if (isMenuOpen) {
+      setTabName("Izbornik");
+    } else if (router.pathname === "/") {
+      setTabName("Naslovnica");
+    } else {
+      const test = router.pathname.toString();
+      const testArray = test.replace("_", " ").split("/");
+      if (testArray[2] === undefined) {
+        setTabName(testArray[1]);
+      } else {
+        setTabName(testArray[2]);
+      }
+    }
+  }, [router.pathname, isMenuOpen]);
 
   return (
     <div className={style.header}>
       <div className={style.menu} onClick={openMenu}>
         <FaBars size={40} color="#3f7253" />
         <div className={style.line}></div>
+        <h3 className={style.tabName}>{tabName}</h3>
       </div>
       <div className={style.title}>OPG Rudić</div>
       <div

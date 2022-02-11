@@ -9,7 +9,12 @@ import style from "../../styles/CoverPhoto.module.css";
 const CoverPhoto = () => {
   return (
     <div className={style.coverPhotoContainer}>
-      <Image src="/viber_image_2020-12-09_23-30-47.jpg" layout="fill" />
+      <Image
+        src="/viber_image_2020-12-09_23-30-47.jpg"
+        layout="fill"
+        priority
+        objectFit="cover"
+      />
       <div className={style.botun}>Saznajte više</div>
     </div>
   );
