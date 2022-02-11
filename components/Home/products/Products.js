@@ -1,8 +1,8 @@
 import ArticleWrapper from "../articleWrapper/articleWrapper";
 import ArticleItem from "../articleItem/articleItem";
 
-import ulje from "../../public/assets/images/HomePage/maslinovo-ulje.jpg";
-import bademi from "../../public/assets/images/HomePage/bademi1.jpg";
+import ulje from "../../../public/assets/images/HomePage/maslinovo-ulje.jpg";
+import bademi from "../../../public/assets/images/HomePage/bademi1.jpg";
 
 const Products = () => {
   return (

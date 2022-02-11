@@ -1,9 +1,9 @@
 import Image from "next/image";
-import img1 from "../../public/assets/images/masline1.png";
+import img1 from "../../../public/assets/images/masline1.png";
 
-import Button from "../UI/button";
+import Button from "../../UI/button";
 
-import styles from "../../styles/FooterImage.module.css";
+import styles from "../../../styles/FooterImage.module.css";
 
 const FooterImage = () => {
   //Checkout on what site you are

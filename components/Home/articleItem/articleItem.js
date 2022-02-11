@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/ArticleItem.module.css";
+import styles from "../../../styles/ArticleItem.module.css";
 
 const ArticleItem = (props) => {
   let currentClass = [styles.itemContainer];

@@ -1,4 +1,4 @@
-import styles from "../../styles/ArticleWrapper.module.css";
+import styles from "../../../styles/ArticleWrapper.module.css";
 
 const ArticleWrapper = (props) => {
   return (

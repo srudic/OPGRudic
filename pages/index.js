@@ -1,6 +1,6 @@
 import CoverPhoto from "../components/coverPhoto/coverPhoto";
-import BlogTitles from "../components/blogTitles/blogTitles";
-import Products from "../components/products/Products";
+import BlogTitles from "../components/Home/blogTitles/blogTitles";
+import Products from "../components/Home/products/Products";
 import styles from "../styles/HomePage.module.css";
 
 const HomePage = () => {
