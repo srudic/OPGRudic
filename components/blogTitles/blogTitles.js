@@ -1,6 +1,5 @@
 import ArticleWrapper from "../articleWrapper/articleWrapper";
 import ArticleItem from "../articleItem/articleItem";
-import styles from "../../styles/BlogTitles.module.css";
 
 const BlogTitles = () => {
   return (

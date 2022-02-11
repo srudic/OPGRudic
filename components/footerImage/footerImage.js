@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img1 from "../../assets/images/masline1.png";
+import img1 from "../../public/assets/images/masline1.png";
 
 import Button from "../UI/button";
 
