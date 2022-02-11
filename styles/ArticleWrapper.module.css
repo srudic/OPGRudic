@@ -1,0 +1,13 @@
+.ArticleWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+}
+
+.line {
+  width: 2px;
+  background-color: var(--color-green);
+}

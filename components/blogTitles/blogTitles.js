@@ -1,3 +1,4 @@
+import ArticleWrapper from "../articleWrapper/ArticleWrapper";
 import styles from "../../styles/BlogTitles.module.css";
 
 const BlogTitles = () => {
