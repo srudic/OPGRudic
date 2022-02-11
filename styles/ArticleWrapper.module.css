@@ -1,4 +1,29 @@
-.ArticleWrapper {
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.titleContainer h2 {
+  font-family: Lucida Handwriting;
+  font-style: italic;
+  font-weight: normal;
+  color: var(--color-golden);
+  font-size: 1.7em;
+  margin: 5em 0em 1em 0em;
+}
+
+.titleContainer h3 {
+  font-family: Lucida Handwriting;
+  font-style: italic;
+  font-weight: normal;
+  color: var(--color-green);
+  font-size: 1.4em;
+  margin: 0em 0em 0em 0em;
+}
+
+.articleWrapper {
   display: flex;
   flex-direction: row;
   margin-top: 5%;

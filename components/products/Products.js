@@ -1,15 +1,15 @@
+import ArticleWrapper from "../articleWrapper/ArticleWrapper";
 import styles from "../../styles/Products.module.css";
 
 const Products = () => {
   return (
-    <div className={styles.ProductsWrapper}>
-      <h2>Proizvodi</h2>
-      <h3>Kušajte okus domaćih proizvoda</h3>
-      <div className={styles.ProductsContainer}>
-        <div>Bademi</div>
-        <div>Ulje</div>
-      </div>
-    </div>
+    <ArticleWrapper
+      title={"Proizvodi"}
+      subtitle={"Kušajte okus domaćih proizvoda"}
+    >
+      <div>Bademi</div>
+      <div>Ulje</div>
+    </ArticleWrapper>
   );
 };
 

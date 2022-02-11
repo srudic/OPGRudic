@@ -3,14 +3,13 @@ import styles from "../../styles/BlogTitles.module.css";
 
 const BlogTitles = () => {
   return (
-    <div className={styles.blogs}>
+    <ArticleWrapper>
       <div className={styles.blogTitle}>
         <div className={styles.year}>2021.</div>
         <div className={styles.title}>
           Proglašenje najboljeg ulja u sedam Kaštela
         </div>
       </div>
-      <div className={styles.line}></div>
       <div className={styles.blogTitle}>
         <div className={styles.year}>2021.</div>
         <div className={styles.title}>
@@ -18,7 +17,7 @@ const BlogTitles = () => {
           za...”
         </div>
       </div>
-    </div>
+    </ArticleWrapper>
   );
 };
 
