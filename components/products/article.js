@@ -13,8 +13,8 @@ const Article = (props) => {
   return (
     <div className={currentClass.join(" ")}>
       <div className={styles.informationContainer}>
-        <h4>{props.subtitle}</h4>
-        <h3>{props.title}</h3>
+        {props.subtitle && <h4>{props.subtitle}</h4>}
+        {props.title && <h3>{props.title}</h3>}
         <p>{props.paragraph}</p>
       </div>
       <div className={styles.articleImageContainer}>
