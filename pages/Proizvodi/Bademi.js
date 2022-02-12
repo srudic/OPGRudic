@@ -1,8 +1,13 @@
 import Wrapper from "../../components/products/wrapper";
 import WelcomeArticle from "../../components/products/welcomeArticle";
 import Article from "../../components/products/article";
+import Button from "../../components/UI/button";
 
 import proizvodi from "../../public/assets/images/HomePage/bademi1.jpg";
+// import proizvodi from "../../public/assets/images/HomePage/frezanjeBadema.jpg";
+import styles from "../../styles/ProductsPage/Products.module.css";
+
+import { useRouter } from "next/router";
 
 const PROIZVODI_ARTICLES = [
   {
@@ -18,6 +23,11 @@ const PROIZVODI_ARTICLES = [
 ];
 
 const AlmondsPage = () => {
+  const router = useRouter();
+  const onClickContact = () => {
+    // router.replace("/O_nama/Kontakt");
+    // ne radi
+  };
   return (
     <Wrapper>
       <WelcomeArticle
@@ -26,6 +36,10 @@ const AlmondsPage = () => {
         title={"Bademi"}
         subtitle={"Vrhunska zdrava grickalica!"}
       />
+      <div className={styles.priceContainer}>
+        <h1>80kn/kg</h1>
+        <Button title={"Kontaktirajte nas"} clicked={onClickContact} />
+      </div>
       {PROIZVODI_ARTICLES.map((article, i) => (
         <Article
           key={Math.random()}
