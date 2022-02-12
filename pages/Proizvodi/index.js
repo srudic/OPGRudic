@@ -34,6 +34,7 @@ const ProductsPage = () => {
       />
       {PROIZVODI_ARTICLES.map((article, i) => (
         <Article
+          key={Math.random()}
           title={article.title}
           subtitle={article.subtitle}
           alt={article.alt}

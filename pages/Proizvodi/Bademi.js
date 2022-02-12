@@ -28,6 +28,7 @@ const AlmondsPage = () => {
       />
       {PROIZVODI_ARTICLES.map((article, i) => (
         <Article
+          key={Math.random()}
           alt={article.alt}
           paragraph={article.paragraph}
           src={proizvodi}

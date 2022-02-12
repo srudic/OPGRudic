@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import img1 from "../../../public/assets/images/masline1.png";
 
 import Button from "../../UI/button";
@@ -11,6 +12,11 @@ const FooterImage = () => {
   const image = img1;
   const headline1 = "Obiteljsko poljoprivredno";
   const headline2 = "gospodarstvo obitelji Rudić";
+  const router = useRouter();
+
+  const onClickContact = () => {
+    router.replace("O_nama/Kontakt");
+  };
 
   return (
     <div className={styles.imageContainer}>
@@ -20,7 +26,7 @@ const FooterImage = () => {
         <h2>{headline2}</h2>
       </div>
       <div className={styles.buttonContainer}>
-        <Button title={"Kontaktirajte nas"} />
+        <Button title={"Kontaktirajte nas"} clicked={onClickContact} />
       </div>
     </div>
   );

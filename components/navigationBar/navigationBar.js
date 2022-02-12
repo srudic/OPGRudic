@@ -56,7 +56,7 @@ const NavigationBar = (props) => {
   return (
     <div className={classesNavigation}>
       {NAVIGATION.map((menu) => (
-        <div className={style.navigation_subcontainer}>
+        <div className={style.navigation_subcontainer} key={Math.random()}>
           <li className={classesTopPages}>
             <Link href={menu.to}>
               <span
@@ -69,7 +69,7 @@ const NavigationBar = (props) => {
           </li>
 
           {menu.submenu.map((submenu) => (
-            <li className={style.subPage}>
+            <li className={style.subPage} key={Math.random()}>
               <Link href={submenu.to}>
                 <span
                   className={
