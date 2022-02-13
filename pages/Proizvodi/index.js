@@ -4,6 +4,8 @@ import Article from "../../components/products/article";
 
 import proizvodi from "../../public/assets/images/HomePage/bademi1.jpg";
 
+import { useRouter } from "next/router";
+
 const PROIZVODI_ARTICLES = [
   {
     title: "Idealno u svakoj prilici",
@@ -24,6 +26,13 @@ const PROIZVODI_ARTICLES = [
 ];
 
 const ProductsPage = () => {
+  const router = useRouter();
+  const onClickOpenAlmondsPage = () => {
+    router.replace("/Proizvodi/Bademi");
+  };
+  const onClickOpenOilPage = () => {
+    router.replace("/Proizvodi/Maslinovo_ulje");
+  };
   return (
     <Wrapper>
       <WelcomeArticle
@@ -43,6 +52,11 @@ const ProductsPage = () => {
           src={proizvodi}
           button
           reverse={i % 2 !== 0}
+          clicked={
+            article.subtitle === "Jezgra badema"
+              ? onClickOpenAlmondsPage
+              : onClickOpenOilPage
+          }
         />
       ))}
     </Wrapper>

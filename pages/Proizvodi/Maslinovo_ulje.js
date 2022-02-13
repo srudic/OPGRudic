@@ -5,15 +5,17 @@ import Button from "../../components/UI/button";
 import styles from "../../styles/ProductsPage/Products.module.css";
 
 import proizvodi from "../../public/assets/images/HomePage/maslinovo-ulje.jpg";
+import slika1 from "../../public/assets/images/HomePage/masline.jpg";
 import slika2 from "../../public/assets/images/HomePage/traktorcic.jpg";
 import slika3 from "../../public/assets/images/HomePage/nagrada.jpg";
+
+import { useRouter } from "next/router";
 const PROIZVODI_ARTICLES = [
   {
     alt: "Super slika",
     paragraph:
       "Zahvaljujući iznimnom sastavu, koji svake godine analiziramo, sa sigurnošću možemo se pohvaliti kvalitetnim ekstra djevičanskim maslinovim uljem. Uz izniman sastav, pruža gorako pikantan okus kao vrhunsko ekstra djevičansko maslinovo ulje.",
-    src: proizvodi,
-    //promijenit sliku
+    src: slika1,
   },
   {
     alt: "Super slika",
@@ -29,9 +31,9 @@ const PROIZVODI_ARTICLES = [
   },
 ];
 const OliveOilPage = () => {
+  const router = useRouter();
   const onClickContact = () => {
-    // router.replace("/O_nama/Kontakt");
-    // ne radi
+    router.replace("/O_nama/Kontakt");
   };
   return (
     <Wrapper>

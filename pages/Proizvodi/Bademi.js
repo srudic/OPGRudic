@@ -29,7 +29,7 @@ const PROIZVODI_ARTICLES = [
 const AlmondsPage = () => {
   const router = useRouter();
   const onClickContact = () => {
-    // router.replace("/O_nama/Kontakt");
+    router.replace("/O_nama/Kontakt");
     // ne radi
   };
   return (
