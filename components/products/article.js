@@ -22,6 +22,7 @@ const Article = (props) => {
           src={props.src}
           alt={props.alt}
           draggable={false}
+          objectFit="cover"
           //   width="100%"
           //   height="100%"
           //   layout="responsive"
