@@ -15,11 +15,71 @@
 
 .contactInfo {
   background-color: var(--color-green);
-  width: 20vw;
+  width: 25vw;
   border-radius: 5px;
+  padding: 2.5em;
+  color: white;
 }
 
 .contactForm {
   width: 40vw;
-  background-color: red;
+  /* display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 0em;
+  height: 100%;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0em 2em;
+}
+
+.messageContainer label {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: var(--color-green);
+}
+
+.messageContainer input {
+  border: 0px;
+  border-bottom: 1px solid var(--color-green);
+  padding: 0.5em 1em;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.contactInfo p {
+  margin-bottom: 5em;
+}
+
+.contactInfo h2 {
+  color: var(--color-golden);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info h3 {
+  padding-left: 0.5em;
+  margin: 0.5em;
+  font-weight: normal;
 }
