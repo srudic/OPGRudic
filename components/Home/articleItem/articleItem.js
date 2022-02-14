@@ -7,7 +7,11 @@ const ArticleItem = (props) => {
     currentClass.push(styles.center);
   }
   return (
-    <div className={currentClass.join(" ")} onClick={props.clicked}>
+    <div
+      className={currentClass.join(" ")}
+      onClick={props.clicked}
+      // onClick={props.clicked ? props.clicked : null}
+    >
       <div className={styles.subtitle}>{props.subtitle}</div>
       <div className={styles.title}>{props.title}</div>
       {props.img && (

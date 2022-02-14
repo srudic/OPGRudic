@@ -17,23 +17,25 @@ const Article = (props) => {
         {props.title && <h3>{props.title}</h3>}
         <p>{props.paragraph}</p>
       </div>
-      <div className={styles.articleImageContainer}>
-        <Image
-          src={props.src}
-          alt={props.alt}
-          draggable={false}
-          objectFit="cover"
-          //   width="100%"
-          //   height="100%"
-          //   layout="responsive"
-          //   objectFit="cover"
-        />
-        {props.button && (
-          <div>
-            <Button clicked={props.clicked} title={props.buttonTitle} />
-          </div>
-        )}
-      </div>
+      {props.src && (
+        <div className={styles.articleImageContainer}>
+          <Image
+            src={props.src}
+            alt={props.alt}
+            draggable={false}
+            objectFit="cover"
+            //   width="100%"
+            //   height="100%"
+            //   layout="responsive"
+            //   objectFit="cover"
+          />
+          {props.button && (
+            <div>
+              <Button clicked={props.clicked} title={props.buttonTitle} />
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };

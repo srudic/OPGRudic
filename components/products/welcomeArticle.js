@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import styles from "../../styles/ProductsPage/Products.module.css";
 
 ///////////////
@@ -8,17 +7,19 @@ import styles from "../../styles/ProductsPage/Products.module.css";
 const WelcomeArticle = (props) => {
   return (
     <div className={styles.welcomeContainer}>
-      <div className={styles.welcomeImageContainer}>
-        <Image
-          src={props.src}
-          alt={props.alt}
-          draggable={false}
-          //   width="100%"
-          //   height="100%"
-          //   layout="responsive"
-          //   objectFit="cover"
-        />
-      </div>
+      {props.src && (
+        <div className={styles.welcomeImageContainer}>
+          <Image
+            src={props.src}
+            alt={props.alt}
+            draggable={false}
+            //   width="100%"
+            //   height="100%"
+            //   layout="responsive"
+            //   objectFit="cover"
+          />
+        </div>
+      )}
       <h1>{props.title}</h1>
       <h2>{props.subtitle}</h2>
     </div>

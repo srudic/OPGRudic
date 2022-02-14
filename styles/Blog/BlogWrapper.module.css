@@ -6,3 +6,19 @@
   width: 100%;
   margin-top: 2em;
 }
+
+.wrapperContainer div {
+  margin: 0.4em 0em;
+  /* font-size: 1em; */
+}
+
+.itemContainer {
+  cursor: pointer;
+  /* border: 1px solid #ccc; */
+  padding: 1em;
+  margin: 1em 0em;
+}
+
+.itemContainer:hover {
+  background-color: #ccc;
+}
