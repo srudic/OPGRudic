@@ -1,0 +1,25 @@
+.wrapper {
+  width: 100%;
+  padding: 2em 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.contactInfo {
+  background-color: var(--color-green);
+  width: 20vw;
+  border-radius: 5px;
+}
+
+.contactForm {
+  width: 40vw;
+  background-color: red;
+}
