@@ -73,11 +73,6 @@ const Header = () => {
     }
   }, [router.pathname, isMenuOpen]);
 
-  console.log(
-    router.pathname,
-    NAVIGATION.to,
-    router.pathname === NAVIGATION.to
-  );
   return (
     <div className={style.header}>
       <div className={style.menu} onClick={openMenu}>

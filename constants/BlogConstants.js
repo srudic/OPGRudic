@@ -5,6 +5,7 @@ export const Blog = [
     subtitle: "Lorem Ipsum is simply.",
     // img: "./public",
     img: "/viber_image_2020-12-09_23-30-47.jpg",
+    year: "2022.",
     column: [
       {
         paragraph:
@@ -33,6 +34,7 @@ export const Blog = [
     to: "115345341",
     title: "Nasa prva prica sum is simply dummy text of th",
     subtitle: "Lorem Ipsum is simply.",
+    year: "2022.",
     img: "https://opgdomjanic.hr/images/made/images/uploads/114/galerija-ljesnjak-01_900_600_s_c1.jpg",
     column: [
       {
@@ -62,6 +64,7 @@ export const Blog = [
     to: "1132441",
     title: "Nasa prva prica sum is simply dummy text of th",
     subtitle: "Lorem Ipsum is simply.",
+    year: "2022.",
     img: "https://opgdomjanic.hr/images/made/images/uploads/114/galerija-ljesnjak-01_900_600_s_c1.jpg",
     column: [
       {
@@ -91,6 +94,7 @@ export const Blog = [
     to: "111432",
     title: "Nasa prva prica sum is simply dummy text of th",
     subtitle: "Lorem Ipsum is simply.",
+    year: "2022.",
     img: "https://opgdomjanic.hr/images/made/images/uploads/114/galerija-ljesnjak-01_900_600_s_c1.jpg",
     column: [
       {
@@ -120,6 +124,7 @@ export const Blog = [
     to: "155555132",
     title: "Nasa prva prica sum is simply dummy text of th",
     subtitle: "Lorem Ipsum is simply.",
+    year: "2022.",
     img: "https://opgdomjanic.hr/images/made/images/uploads/114/galerija-ljesnjak-01_900_600_s_c1.jpg",
     column: [
       {
@@ -149,6 +154,7 @@ export const Blog = [
     to: "1556992",
     title: "Nasa prva prica sum is simply dummy text of th",
     subtitle: "Lorem Ipsum is simply.",
+    year: "2022.",
     img: "https://opgdomjanic.hr/images/made/images/uploads/114/galerija-ljesnjak-01_900_600_s_c1.jpg",
     column: [
       {
@@ -178,6 +184,7 @@ export const Blog = [
     to: "1555455132",
     title: "Nasa prva prica sum is simply dummy text of th",
     subtitle: "Lorem Ipsum is simply.",
+    year: "2022.",
     img: "https://opgdomjanic.hr/images/made/images/uploads/114/galerija-ljesnjak-01_900_600_s_c1.jpg",
     column: [
       {

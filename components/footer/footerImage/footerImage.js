@@ -15,7 +15,7 @@ const FooterImage = () => {
   const router = useRouter();
 
   const onClickContact = () => {
-    router.replace("O_nama/Kontakt");
+    router.replace("/O_nama/Kontakt");
   };
 
   return (
