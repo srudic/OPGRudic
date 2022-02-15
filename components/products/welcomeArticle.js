@@ -1,23 +1,15 @@
 import Image from "next/image";
 import styles from "../../styles/ProductsPage/Products.module.css";
 
-///////////////
-//Add button option
-
 const WelcomeArticle = (props) => {
   return (
-    <div className={styles.welcomeContainer}>
+    <div
+      className={styles.welcomeContainer}
+      style={{ marginBottom: props.info ? "0em" : null }}
+    >
       {props.src && (
         <div className={styles.welcomeImageContainer}>
-          <Image
-            src={props.src}
-            alt={props.alt}
-            draggable={false}
-            // width="100%"
-            // height="100%"
-            //   layout="responsive"
-            //   objectFit="cover"
-          />
+          <Image src={props.src} alt={props.alt} draggable={false} />
         </div>
       )}
       <h1>{props.title}</h1>

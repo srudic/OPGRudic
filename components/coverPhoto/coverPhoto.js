@@ -3,20 +3,11 @@ import Button from "../UI/button";
 import style from "../../styles/CoverPhoto.module.css";
 
 //MISSING
-//Add button to the center, now I think it is not in the center
-//Destructure compontent --> button in the another
 //Add heart #kupujmohrvatsko
 
 const CoverPhoto = () => {
   const scrollToComponenthandler = () => {
-    // console.log("Csroll");
-    // if (document.readyState === "complete") {
-    //   document.documentElement.scrollHeight = 500;
-    // }
-    // element which needs to be scrolled to
     var element = document.querySelector("#blogSuggestions");
-
-    // scroll to element
     element.scrollIntoView({ behavior: "smooth" });
   };
 

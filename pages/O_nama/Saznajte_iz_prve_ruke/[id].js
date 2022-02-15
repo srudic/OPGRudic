@@ -27,24 +27,16 @@ export const getStaticProps = (context) => {
 };
 
 const Details = ({ blogPosts }) => {
-  // console.log(blogPost);
   const blogPost = blogPosts[0];
   return (
     <Wrapper>
-      <WelcomeArticle
-        title={blogPost.title}
-        subtitle={blogPost.subtitle}
-        // src={"/viber_image_2020-12-09_23-30-47.jpg"}
-        // src={blogPost.src}
-      />
+      <WelcomeArticle title={blogPost.title} subtitle={blogPost.subtitle} />
       {blogPost.column.map((article, i) => {
         return (
           <Article
             key={i}
             paragraph={article.paragraph}
             title={article.title}
-            // img={article.img}
-            // reverse={i % 2}
           />
         );
       })}

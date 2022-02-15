@@ -4,10 +4,6 @@ import NavigationBar from "../navigationBar/navigationBar";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
-//MISSING
-//Add tab Name into header
-//Add "Izbornik" if menu is open
-
 const NAVIGATION = [
   {
     to: "/",
