@@ -1,13 +1,19 @@
 .FilterContainer {
-  width: 100%;
+  width: 75%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.FilterContainer .filterDescription {
+  font-size: 1em;
+  margin-right: 2em;
 }
 
 .FilterContainer div {
   padding: 0.5em 2em;
-  margin: 1em;
+  font-size: 0.8em;
+  margin: 1em 0.2em;
   border: 1px solid #ccc;
   border-radius: 25px;
   cursor: pointer;
@@ -15,4 +21,32 @@
 
 .FilterContainer div:hover {
   background-color: #ccc;
+}
+
+@media only screen and (max-width: 1000px) {
+  .FilterContainer {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .FilterContainer .filterDescription {
+    font-size: 0.8em;
+    margin-right: 1em;
+  }
+
+  .FilterContainer div {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .FilterContainer .filterDescription {
+    font-size: 0.7em;
+    margin-right: 1em;
+  }
+
+  .FilterContainer div {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+  }
 }

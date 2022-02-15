@@ -33,11 +33,12 @@ const FromFirstHandPage = () => {
 
   return (
     <div className={styles.blogContainer}>
+      <h1>Saznajte iz prve ruke</h1>
       <Filter filterSelectedHandler={filterSelectedHandler} />
       {blogPosts.length !== 0 ? (
         <BlogWrapper blogConstants={blogPosts} />
       ) : (
-        <h2>Nema prijedloga</h2>
+        <h2>Nema rezultata, promjenite opcije filtriranja</h2>
       )}
     </div>
   );

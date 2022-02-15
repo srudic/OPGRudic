@@ -8,7 +8,6 @@ const Filter = (props) => {
   ]);
 
   const filterHandler = ({ filterBy, index }) => {
-    console.log(filterBy);
     const newArray = filterOptions.slice();
     newArray[index].selected = !newArray[index].selected;
     setFilterOptions(newArray);
@@ -21,6 +20,7 @@ const Filter = (props) => {
 
   return (
     <div className={styles.FilterContainer}>
+      <h2 className={styles.filterDescription}>Opcije filtriranja </h2>
       {filterOptions.map((option, i) => (
         <div
           key={option.tag}

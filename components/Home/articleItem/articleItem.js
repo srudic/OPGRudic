@@ -10,7 +10,7 @@ const ArticleItem = (props) => {
     <div
       className={currentClass.join(" ")}
       onClick={props.clicked}
-      // onClick={props.clicked ? props.clicked : null}
+      style={{ width: props.blog ? "100%" : null }}
     >
       <div className={styles.subtitle}>{props.subtitle}</div>
       <div className={styles.title}>{props.title}</div>

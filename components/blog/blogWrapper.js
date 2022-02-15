@@ -7,6 +7,7 @@ const BlogItem = (props) => {
   const router = useRouter();
   return (
     <ArticleItem
+      blog
       title={props.title}
       subtitle={props.subtitle}
       clicked={() => {
