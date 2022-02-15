@@ -3,7 +3,8 @@ export const Blog = [
     to: "11453451",
     title: "Nasa prva prica sum is simply dummy text of th",
     subtitle: "Lorem Ipsum is simply.",
-    img: "https://opgdomjanic.hr/images/made/images/uploads/114/galerija-ljesnjak-01_900_600_s_c1.jpg",
+    // img: "./public",
+    img: "/viber_image_2020-12-09_23-30-47.jpg",
     column: [
       {
         paragraph:

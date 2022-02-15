@@ -4,7 +4,7 @@ import Article from "../../../components/products/article";
 
 import { Blog as BLOG_CONSTANS } from "../../../constants/BlogConstants";
 
-export const getStaticPaths = async () => {
+export const getStaticPaths = () => {
   const paths = BLOG_CONSTANS.map((blogArticle) => {
     return {
       params: { id: blogArticle.to.toString() },
@@ -17,7 +17,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async (context) => {
+export const getStaticProps = (context) => {
   const id = context.params.id;
   const blogPost = BLOG_CONSTANS.filter((blogArticle) => blogArticle.to === id);
 
@@ -31,7 +31,12 @@ const Details = ({ blogPosts }) => {
   const blogPost = blogPosts[0];
   return (
     <Wrapper>
-      <WelcomeArticle title={blogPost.title} subtitle={blogPost.subtitle} />
+      <WelcomeArticle
+        title={blogPost.title}
+        subtitle={blogPost.subtitle}
+        // src={"/viber_image_2020-12-09_23-30-47.jpg"}
+        src={blogPost.src}
+      />
       {blogPost.column.map((article, i) => {
         return (
           <Article

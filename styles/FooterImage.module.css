@@ -34,3 +34,15 @@
 .headLineContainer h2 {
   margin: 0em;
 }
+
+@media only screen and (max-width: 1250px) {
+  .headLineContainer {
+    top: 60%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .headLineContainer {
+    font-size: 1.2em;
+  }
+}

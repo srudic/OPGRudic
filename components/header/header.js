@@ -8,6 +8,42 @@ import { useRouter } from "next/router";
 //Add tab Name into header
 //Add "Izbornik" if menu is open
 
+const NAVIGATION = [
+  {
+    to: "/",
+    title: "Naslovnica",
+  },
+  {
+    to: "/Proizvodi",
+    title: "Proizvodi",
+  },
+
+  {
+    to: "/Proizvodi/Maslinovo_ulje",
+    title: "Maslinovo ulje",
+  },
+  {
+    to: "/Proizvodi/Bademi",
+    title: "Bademi",
+  },
+  {
+    to: "/O_nama",
+    title: "O nama",
+  },
+  {
+    to: "/O_nama/Saznajte_iz_prve_ruke",
+    title: "Saznajte iz prve ruke",
+  },
+  {
+    to: "/O_nama/Lokacije_nasada",
+    title: "Lokacije nasada",
+  },
+  {
+    to: "/O_nama/Kontakt",
+    title: "Kontakt",
+  },
+];
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [tabName, setTabName] = useState("");
@@ -24,19 +60,17 @@ const Header = () => {
   useEffect(() => {
     if (isMenuOpen) {
       setTabName("Izbornik");
-    } else if (router.pathname === "/") {
-      setTabName("Naslovnica");
-    } else {
-      const test = router.pathname.toString();
-      const testArray = test.replace("_", " ").split("/");
-      if (testArray[2] === undefined) {
-        setTabName(testArray[1]);
-      } else {
-        setTabName(testArray[2]);
-      }
+    } else if (router.pathname === NAVIGATION.to) {
+      //zasto ovo ne radi??
+      setTabName(NAVIGATION.title);
     }
   }, [router.pathname, isMenuOpen]);
 
+  console.log(
+    router.pathname,
+    NAVIGATION.to,
+    router.pathname === NAVIGATION.to
+  );
   return (
     <div className={style.header}>
       <div className={style.menu} onClick={openMenu}>
