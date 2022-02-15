@@ -3,6 +3,14 @@
   height: 95vh;
 }
 
+.buttonContainer {
+  position: absolute;
+  bottom: 2em; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  font-size: 1.2em;
+  transform: translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 600px) {
   .coverPhotoContainer {
     height: 50vh;

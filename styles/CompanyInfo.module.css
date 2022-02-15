@@ -25,6 +25,14 @@
   font-weight: normal;
 }
 
+.goToTopContainer {
+  cursor: pointer;
+}
+
+.goToTopContainer:hover {
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 768px) {
   .companyInfoContainter {
     padding: 2em 5em;

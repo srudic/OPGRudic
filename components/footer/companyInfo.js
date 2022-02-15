@@ -7,6 +7,10 @@ const info = {
 };
 
 const CompanyInfo = () => {
+  const goToTopHandler = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className={style.companyInfoContainter}>
       <div className={style.companyInfo}>
@@ -15,7 +19,7 @@ const CompanyInfo = () => {
           <p key={item + 1}>{item}</p>
         ))}
       </div>
-      <div>
+      <div className={style.goToTopContainer} onClick={goToTopHandler}>
         <FaChevronCircleUp size={40} />
         {/*  MISSING: Add event for going to top of the page */}
       </div>

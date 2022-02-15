@@ -103,3 +103,35 @@
   font-weight: normal;
   color: var(--color-golden);
 }
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 2em 0em;
+  }
+  .articleContainer {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+  .informationContainer {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .articleContainer {
+    font-size: 1em;
+  }
+  .informationContainer {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .articleContainer {
+    font-size: 0.9em;
+  }
+  .informationContainer {
+    font-size: 0.9em;
+  }
+}
