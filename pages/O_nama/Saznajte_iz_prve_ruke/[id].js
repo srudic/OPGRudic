@@ -35,15 +35,16 @@ const Details = ({ blogPosts }) => {
         title={blogPost.title}
         subtitle={blogPost.subtitle}
         // src={"/viber_image_2020-12-09_23-30-47.jpg"}
-        src={blogPost.src}
+        // src={blogPost.src}
       />
       {blogPost.column.map((article, i) => {
         return (
           <Article
             key={i}
             paragraph={article.paragraph}
-            img={article.img}
-            reverse={i % 2}
+            title={article.title}
+            // img={article.img}
+            // reverse={i % 2}
           />
         );
       })}

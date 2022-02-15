@@ -11,8 +11,14 @@ const Article = (props) => {
   }
 
   return (
-    <div className={currentClass.join(" ")}>
-      <div className={styles.informationContainer}>
+    <div
+      className={currentClass.join(" ")}
+      style={{ justifyContent: !props.src ? "center" : null }}
+    >
+      <div
+        className={styles.informationContainer}
+        style={{ width: !props.src ? "80%" : null }}
+      >
         {props.subtitle && <h4>{props.subtitle}</h4>}
         {props.title && <h3>{props.title}</h3>}
         <p>{props.paragraph}</p>
