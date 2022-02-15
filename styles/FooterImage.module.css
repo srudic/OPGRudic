@@ -52,3 +52,12 @@
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .imageContainer {
+    margin-bottom: 0em;
+  }
+  .buttonContainer {
+    font-size: 0.9em;
+  }
+}

@@ -44,3 +44,13 @@
     font-size: 1em;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .itemContainer {
+    padding: 1em 0em;
+  }
+  .imageContainer {
+    margin: 1em 0em;
+    height: 35vh;
+  }
+}

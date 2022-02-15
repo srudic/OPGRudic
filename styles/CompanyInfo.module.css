@@ -37,6 +37,13 @@
   .companyInfoContainter {
     padding: 2em 5em;
   }
+  .companyInfo h1 {
+    font-size: 1.1em;
+  }
+
+  .companyInfo p {
+    font-size: 0.9em;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -44,10 +51,10 @@
     padding: 2em 2em;
   }
   .companyInfo h1 {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   .companyInfo p {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 }

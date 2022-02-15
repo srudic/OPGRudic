@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Button from "../UI/button";
 import style from "../../styles/CoverPhoto.module.css";
-import { useEffect } from "react";
 
 //MISSING
 //Add button to the center, now I think it is not in the center
