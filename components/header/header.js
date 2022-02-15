@@ -60,9 +60,16 @@ const Header = () => {
   useEffect(() => {
     if (isMenuOpen) {
       setTabName("Izbornik");
-    } else if (router.pathname === NAVIGATION.to) {
-      //zasto ovo ne radi??
-      setTabName(NAVIGATION.title);
+    } else {
+      let currentPath = "";
+      NAVIGATION.some((tab) => {
+        if (router.pathname === tab.to) {
+          currentPath = tab.title;
+          return true;
+        }
+        return false;
+      });
+      setTabName(currentPath);
     }
   }, [router.pathname, isMenuOpen]);
 

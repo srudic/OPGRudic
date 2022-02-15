@@ -1,0 +1,18 @@
+.FilterContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FilterContainer div {
+  padding: 0.5em 2em;
+  margin: 1em;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.FilterContainer div:hover {
+  background-color: #ccc;
+}

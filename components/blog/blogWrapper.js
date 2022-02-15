@@ -16,11 +16,11 @@ const BlogItem = (props) => {
   );
 };
 
-const BlogWrapper = () => {
+const BlogWrapper = (props) => {
   //   console.log(BLOG_CONSTANTS);
   return (
     <div className={styles.wrapperContainer}>
-      {BLOG_CONSTANTS.map((blogItem) => (
+      {props.blogConstants.map((blogItem) => (
         <BlogItem
           key={blogItem.to}
           to={blogItem.to}
