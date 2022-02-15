@@ -36,7 +36,7 @@ const ContactForm = () => {
           <label htmlFor={"msg-input"}>Poruka</label>
           <textarea
             rows="4"
-            cols="50"
+            cols="34"
             name="message"
             ref={messageRef}
             name={"msg-input"}
