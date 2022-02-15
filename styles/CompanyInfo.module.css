@@ -24,3 +24,22 @@
   font-size: 1em;
   font-weight: normal;
 }
+
+@media only screen and (max-width: 768px) {
+  .companyInfoContainter {
+    padding: 2em 5em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .companyInfoContainter {
+    padding: 2em 2em;
+  }
+  .companyInfo h1 {
+    font-size: 1em;
+  }
+
+  .companyInfo p {
+    font-size: 0.8em;
+  }
+}

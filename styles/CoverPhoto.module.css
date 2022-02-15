@@ -2,3 +2,9 @@
   position: relative;
   height: 95vh;
 }
+
+@media only screen and (max-width: 600px) {
+  .coverPhotoContainer {
+    height: 50vh;
+  }
+}

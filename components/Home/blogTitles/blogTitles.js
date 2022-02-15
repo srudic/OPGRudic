@@ -16,8 +16,6 @@ const BlogTitles = () => {
     // console.log(rand1, rand2);
   }, []);
 
-  const clickHandler = () => {};
-
   return (
     <ArticleWrapper>
       {posts.map((post, i) => (

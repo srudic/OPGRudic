@@ -9,3 +9,10 @@
   border-radius: 50px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 425px) {
+  .button {
+    padding: 0.8em 1em;
+    font-size: 1em;
+  }
+}

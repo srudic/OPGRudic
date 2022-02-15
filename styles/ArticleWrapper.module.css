@@ -44,4 +44,10 @@
     align-items: center;
     justify-content: center;
   }
+  .titleContainer h2 {
+    font-size: 1.5em;
+  }
+  .titleContainer h3 {
+    font-size: 1em;
+  }
 }
