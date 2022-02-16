@@ -30,10 +30,10 @@ const NAVIGATION = [
         to: "/O_nama/Saznajte_iz_prve_ruke",
         title: "Saznajte iz prve ruke",
       },
-      {
-        to: "/O_nama/Lokacije_nasada",
-        title: "Lokacije nasada",
-      },
+      // {
+      //   to: "/O_nama/Lokacije_nasada",
+      //   title: "Lokacije nasada",
+      // },
       {
         to: "/O_nama/Kontakt",
         title: "Kontakt",
