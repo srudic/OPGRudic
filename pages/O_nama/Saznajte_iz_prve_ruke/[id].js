@@ -1,7 +1,7 @@
 import Wrapper from "../../../components/products/wrapper";
 import WelcomeArticle from "../../../components/products/welcomeArticle";
 import Article from "../../../components/products/article";
-
+import Head from "next/head";
 import { Blog as BLOG_CONSTANS } from "../../../constants/BlogConstants";
 
 export const getStaticPaths = () => {
@@ -30,6 +30,13 @@ const Details = ({ blogPosts }) => {
   const blogPost = blogPosts[0];
   return (
     <Wrapper>
+      <Head>
+        <title>OPG Rudić - O nama - Saznajte iz prve ruke</title>
+        <meta
+          name="description"
+          content="Meta description for the Almonds page"
+        />
+      </Head>
       <WelcomeArticle title={blogPost.title} subtitle={blogPost.subtitle} />
       {blogPost.column.map((article, i) => {
         return (

@@ -1,7 +1,7 @@
 import Wrapper from "../../components/products/wrapper";
 import WelcomeArticle from "../../components/products/welcomeArticle";
 import Article from "../../components/products/article";
-
+import Head from "next/head";
 const INFO = {
   title: "O nama",
   column: [
@@ -14,6 +14,13 @@ const INFO = {
 const AboutUsPage = () => {
   return (
     <Wrapper>
+      <Head>
+        <title>OPG Rudić - O nama</title>
+        <meta
+          name="description"
+          content="Meta description for the AboutUs page"
+        />
+      </Head>
       <WelcomeArticle subtitle={INFO.title} info />
       {INFO.column.map((article, i) => {
         return <Article key={i} paragraph={article.paragraph} />;

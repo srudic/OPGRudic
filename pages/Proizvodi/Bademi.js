@@ -2,7 +2,7 @@ import Wrapper from "../../components/products/wrapper";
 import WelcomeArticle from "../../components/products/welcomeArticle";
 import Article from "../../components/products/article";
 import Button from "../../components/UI/button";
-
+import Head from "next/head";
 import proizvodi from "../../public/assets/images/HomePage/bademi1.jpg";
 import slika1 from "../../public/assets/images/HomePage/bajamici.jpg";
 import slika2 from "../../public/assets/images/HomePage/frezanje.jpg";
@@ -34,6 +34,13 @@ const AlmondsPage = () => {
   };
   return (
     <Wrapper>
+      <Head>
+        <title>OPG Rudić - Proizvodi - Bademi</title>
+        <meta
+          name="description"
+          content="Meta description for the Almonds page"
+        />
+      </Head>
       <WelcomeArticle
         src={proizvodi}
         alt={"Proizvodi Rudić OPG"}

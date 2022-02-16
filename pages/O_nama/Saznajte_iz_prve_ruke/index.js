@@ -3,6 +3,7 @@ import BlogWrapper from "../../../components/blog/blogWrapper";
 import Filter from "../../../components/blog/filter";
 import { Blog as BLOG_CONSTANS } from "../../../constants/BlogConstants";
 import styles from "../../../styles/Blog/Blog.module.css";
+import Head from "next/head";
 
 const FromFirstHandPage = () => {
   const [blogPosts, setBlogPosts] = useState(BLOG_CONSTANS);
@@ -33,6 +34,13 @@ const FromFirstHandPage = () => {
 
   return (
     <div className={styles.blogContainer}>
+      <Head>
+        <title>OPG Rudić - O nama - Saznajte iz prve ruke</title>
+        <meta
+          name="description"
+          content="Meta description for the Almonds page"
+        />
+      </Head>
       <h1>Saznajte iz prve ruke</h1>
       <Filter filterSelectedHandler={filterSelectedHandler} />
       {blogPosts.length !== 0 ? (

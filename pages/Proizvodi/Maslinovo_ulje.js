@@ -3,7 +3,7 @@ import WelcomeArticle from "../../components/products/welcomeArticle";
 import Article from "../../components/products/article";
 import Button from "../../components/UI/button";
 import styles from "../../styles/ProductsPage/Products.module.css";
-
+import Head from "next/head";
 import proizvodi from "../../public/assets/images/HomePage/maslinovo-ulje.jpg";
 import slika1 from "../../public/assets/images/HomePage/masline.jpg";
 import slika2 from "../../public/assets/images/HomePage/traktorcic.jpg";
@@ -37,6 +37,10 @@ const OliveOilPage = () => {
   };
   return (
     <Wrapper>
+      <Head>
+        <title>OPG Rudić - Proizvodi - Maslinovo ulje</title>
+        <meta name="description" content="Meta description for the Oil page" />
+      </Head>
       <WelcomeArticle
         src={proizvodi}
         alt={"Proizvodi Rudić OPG"}

@@ -1,7 +1,7 @@
 import Wrapper from "../../components/products/wrapper";
 import WelcomeArticle from "../../components/products/welcomeArticle";
 import Article from "../../components/products/article";
-
+import Head from "next/head";
 import proizvodi from "../../public/assets/images/HomePage/bademi1.jpg";
 
 import { useRouter } from "next/router";
@@ -35,6 +35,13 @@ const ProductsPage = () => {
   };
   return (
     <Wrapper>
+      <Head>
+        <title>OPG Rudić - Proizvodi</title>
+        <meta
+          name="description"
+          content="Meta description for the Products page"
+        />
+      </Head>
       <WelcomeArticle
         src={proizvodi}
         alt={"Proizvodi Rudić OPG"}
